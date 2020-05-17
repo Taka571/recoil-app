@@ -1,10 +1,12 @@
 import React from "react";
-import { TaskList } from "./Task";
 import { RecoilRoot } from "recoil";
+import TaskList from "./components/TaskList";
+import TaskInput from "./components/TaskInput";
 
 function App() {
   return (
     <RecoilRoot>
+      <TaskInput />
       <TaskList />
     </RecoilRoot>
   );
